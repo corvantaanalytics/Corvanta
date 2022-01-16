@@ -7,9 +7,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&display=swap" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -55,7 +53,7 @@
 						<div class="top-links">
 							<ul class="top-links-container">
 								<li class="top-links-item"><a href="#wrapper">Home</a></li>
-								<li class="top-links-item"><a href="#aboutus">About Us</a></li>
+								<li class="top-links-item"><a href="#">FAQs</a></li>
 								<li class="top-links-item"><a href="#contact">Contact</a></li>
 								<li class="top-links-item"><a href="#"><img src="seo/images/flags/eng.png" alt="Lang">Eng</a>
 									<ul class="top-links-sub-menu">
@@ -79,7 +77,7 @@
 							<li><a href="https://youtube.com/semicolonweb" class="si-youtube" target="_blank"><span class="ts-icon"><i class="icon-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
 							<li><a href="https://instagram.com/semicolonweb" class="si-instagram" target="_blank"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
 							<li><a href="tel:+10.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+10.11.85412542</span></a></li>
-							<li><a href="mailto:info@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">demo@corvanta.com</span></a></li>
+							<li><a href="mailto:info@Corvanta.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@Corvanta.com</span></a></li>
 						</ul><!-- #top-social end -->
 
 					</div>
@@ -98,18 +96,24 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo1.png" alt="Corvanta Logo" width="200"></a>
-							<!-- <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a> -->
+							<a href="#wrapper" class="standard-logo" data-dark-logo="images/logo1.png"><img src="images/logo1.png" alt="Corvanta Logo"></a>
+							<a href="#wrapper" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo1.png" alt="Corvanta Logo"></a>
 						</div><!-- #logo end -->
 
 						<div class="header-misc">
-							<a href="#aboutus" class="button button-rounded ms-3 d-none d-sm-block">Get Started</a>
+
+							<!-- Top Search
+							============================================= -->
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+							</div><!-- #top-search end -->
+
+							<a href="#" class="button button-rounded ms-3 d-none d-sm-block">Get Started</a>
+
 						</div>
+
 						<div id="primary-menu-trigger">
-							<svg class="svg-trigger" viewBox="0 0 100 100">
-								<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
-								<path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
-							</svg>
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
 						</div>
 
 						<!-- Primary Navigation
@@ -119,13 +123,17 @@
 							<ul class="menu-container">
 								<li class="menu-item current"><a class="menu-link" href="#wrapper"><div>Home</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#why"><div>Why Corvanta</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#work"><div>How We Work</div></a>
-								</li>
-								<li class="menu-item"><a class="menu-link" href="#aboutus"><div>About Us</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#work"><div>How it work</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#about"><div>About Us</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#contact"><div>Contact</div></a></li>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						</form>
+
 					</div>
 				</div>
 			</div>
@@ -135,18 +143,18 @@
 		<!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 include-header">
-			<div class="slider-inner" style="background: #FFF url('images/home2.jpg') center center no-repeat; background-size: cover;">
+			<div class="slider-inner" style="background: #FFF url('seo/images/hero/header1.png') center center no-repeat; background-size: cover;">
 
 				<div class="vertical-middle slider-element-fade">
 					<div class="container py-5">
 						<div class="row pt-5">
 							<div class="col-lg-5 col-md-8">
-								<div class="slider-title">
-									
-									<h2>Improve your SEO with Data.</h2>
+								<div class="slider-title"><br><br>
+									<!-- <div class="badge rounded-pill badge-default">SEO Ready</div> -->
+									<h2>Optimize your IT Spend with Corvanta</h2>
 									<h3 class="text-rotater mb-2" data-separator="," data-rotate="fadeIn" data-speed="3500">- Boost your own <span class="t-rotate">Awesome,Beautiful,Great</span> Website.</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vitae mollitia dignissimos ab qui aspernatur.</p>
-									<a href="#aboutus" class="button button-rounded button-large nott ls0">Get Started</a>
+									<a href="#about" class="button button-rounded button-large nott ls0">Get Started</a>
 									<a href="#contact" class="button button-rounded button-large button-light text-dark bg-white border nott ls0">Contact Us</a>
 								</div>
 							</div>
@@ -154,6 +162,11 @@
 					</div>
 
 				</div>
+
+				<div class="video-wrap h-100 d-block d-lg-none">
+					<div class="video-overlay" style="background: rgba(255,255,255,0.85);"></div>
+				</div>
+
 			</div>
 		</section><!-- #slider end -->
 
@@ -177,69 +190,260 @@
 					</div>
 				</div>
 
-				<!-- Why Corvanta
+				<!-- Features
 				============================================= -->
-				<div class="section parallax parallax-bg m-0 border-top-0" data-rellax-speed="2" style="background: url('seo/images/sections/3.jpg') center center; padding: 100px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -200px;" id="why">
-					<div class="container-fluid center clearfix">
-						<h2 class="mx-auto center font-body" style="max-width: 700px; font-size: 40px;" >Why Corvanta</h2>
-						<span class="mx-auto center font-body" style="max-width: 700px; font-size: 20px;">We help enterprises across all industires optimize their IT RUN spend with real time analysis on their effort and revenue spent on IT RUN without compromising on efficiency and quality which in turn increases their operating margin</span>	
+				<div id="why" class="section bg-transparent mt-4 mb-0 pb-0">
+					<div class="container">
+						<div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
+							
+							<h3 class="nott ls0 mb-3">Why Corvanta</h3>
+							<p>Corvanta is the leading provider of enterprise IT spend analytics. Our platform provides organizations with the insights needed to optimize spending on mission-critical IT. Using our  analytics platform, Corvanta enables enterprises to make informed IT vendor sourcing and spend management decisions, increasing operating margin and fast tracking business transformation.</p>
+						</div>
+						<div class="row justify-content-between align-items-center">
+
+							<div class="col-lg-4 col-sm-6">
+
+								<div class="feature-box flex-md-row-reverse text-md-end border-0">
+									<div class="fbox-icon tex">
+										<a href="#"><img src="images/icons/real.png" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Realtime Pricing Analysis</h3>
+										<p>Our analytics engine analysis the best optimized price based on the key input parameters. It also provides projections on the effort and tickets to be optimized.</p>
+									</div>
+								</div>
+
+								<div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="images/icons/automation.png" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Automation</h3>
+										<p>Levers for automation based on the industry and type of applications are analyzed.</p>
+									</div>
+								</div>
+
+								<div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="images/icons/ticket.jpg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Ticket Optimization</h3>
+										<p>Recommendations on the minimum number of tickets is analyzed based on the type of applications and the Industry.</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
+								<img src="seo/images/sections/2.1.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+							</div>
+
+							<div class="col-lg-4 col-sm-6">
+
+								<div class="feature-box border-0">
+									<div class="fbox-icon">
+										<a href="#"><img src="images/icons/pricing.png" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Pricing</h3>
+										<p>Recommendations on the type of Pricing is provided whether a fixed Price or Rate Card (Time & Material) should be adopted based on the current IT structure.</p>
+									</div>
+								</div>
+
+								<div class="feature-box border-0 mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="images/icons/benchmark.png" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Industry Benchmarking</h3>
+										<p>Analyze the current spend and benchmark it with peer group</p>
+									</div>
+								</div>
+
+								<div class="feature-box border-0 mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="images/icons/sourcing.png" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+									</div>
+									<div class="fbox-content">
+										<h3 class="nott ls0">Strategic Sourcing</h3>
+										<p>On detailed study, recommendations are suggested are on the right engagement model to achieve the lowest possible total cost of ownership and minimize risks.</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
 
-				<!-- How we work	
+				<!-- Pricing
 				============================================= -->
-				<div class="section m-0" style="background: url('seo/images/sections/5.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
-					<div id="work" class="page-section pt-0" >
-						<div class="content-wrap">
-							<div class="container clearfix">
-								<div class="row col-mb-50 mb-0">
-									<div class="col-md-6">
-										<h5>Half Width</h5>
-										Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus.
+				<!-- <div class="section m-0" style="background: url('seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-lg-4 mt-4">
+								<div class="heading-block border-bottom-0 bottommargin-sm">
+									<div class="badge rounded-pill badge-default">Pricing Table</div>
+									<h3 class="nott ls0">No Hidden Charges. <br>Choose Your Best Plan.</h3>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
+								<div class="pricing-tenure-switcher d-flex align-items-center mb-4 position-relative" data-container="#pricing-switch">
+									<span class="pts-left fw-bold text-muted">Monthly</span>
+									<div class="pts-switcher mx-3">
+										<div class="switch">
+											<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
+											<label for="switch-toggle-pricing-tenure" class="mb-0"></label>
+										</div>
 									</div>
-			
-									<div class="col-md-6">
-										<h5>Half Width</h5>
-										Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus.
-									</div>
+									<span class="pts-right fw-bold text-muted">Yearly</span>
+									<div class="price-discount"></div>
 								</div>
 							</div>
+
+							<div class="col-lg-8">
+								<div id="section-pricing" class="page-section p-0 m-0">
+
+									<div id="pricing-switch" class="pricing row align-items-end g-0 col-mb-50 mb-4">
+
+										<div class="col-md-6">
+
+											<div class="pricing-box">
+												<div class="pricing-title">
+													<img class="mb-2 bg-transparent rounded-0" src="seo/images/icons/man.svg" alt="Pricing Icon" width="50">
+													<h3>Single User Plan</h3>
+													<span>Most Popular</span>
+												</div>
+												<div class="pricing-price">
+													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5<span class="price-tenure">Per Month</span></div>
+													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>
+												</div>
+												<div class="pricing-features border-0 bg-transparent">
+													<ul>
+														<li><i class="icon-check-circle color me-2"></i><strong>Limited</strong> Support</li>
+														<li class="pts-switch-content-left text-black-50"><i class="icon-minus-circle me-2"></i><del style="opacity: .5"><strong>1</strong> Free Optimization</del></li>
+														<li class="pts-switch-content-right"><i class="icon-check-circle color me-2"></i><strong>1</strong> Free Optimization</li>
+														<li><i class="icon-check-circle color me-2"></i><strong>100+</strong> Pages</li>
+														<li><i class="icon-check-circle color me-2"></i><strong>Single</strong> User License</li>
+														<li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
+													</ul>
+												</div>
+												<div class="pricing-action">
+													<div class="pts-switch-content-left"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
+													<div class="pts-switch-content-right"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="pricing-box">
+												<div class="pricing-title">
+													<img class="mb-2 bg-transparent rounded-0" src="seo/images/icons/group.svg" alt="Pricing Icon" width="60">
+													<h3>Multiple User Plan</h3>
+												</div>
+												<div class="pricing-price">
+													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>12<span class="price-tenure">Per Month</span></div>
+													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>115<span class="price-tenure">Per Year</span></div>
+												</div>
+												<div class="pricing-features border-0 bg-transparent">
+													<ul>
+														<li><i class="icon-check-circle color me-2"></i><strong>24*7</strong> Support</li>
+														<li><i class="icon-check-circle color me-2"></i><strong>10</strong> Free Optimization</li>
+														<li><i class="icon-check-circle color me-2"></i><strong>1000+</strong> Pages</li>
+														<li><i class="icon-check-circle color me-2"></i><strong>Unlimited</strong> User License</li>
+														<li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
+													</ul>
+												</div>
+												<div class="pricing-action">
+													<div class="pts-switch-content-left"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
+													<div class="pts-switch-content-right"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
 						</div>
 					</div>
-				</div>	
-				<!-- AboutUs
+				</div> -->
+
+				<!-- Form Section
 				============================================= -->
-				<div class="section m-0" style="background: #FFF url('images/aboutus.png') no-repeat center center; background-size: cover; padding: 100px 0;" id="aboutus">
+				<div id="about" class="section m-0" style="background: url('seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
 					<div class="container">
 						<div class="row justify-content-between align-items-center">
+
 							<div class="col-md-4">
-								<div class="container clearfix">
-									<h2 class="mx-auto bottommargin font-body" style="max-width: 700px; font-size: 40px;" >Corvanta guides you how much to spend</h2>
-									<p class="lead mx-auto bottommargin" style="max-width: 800px;">informed decisions based on data</p>
-									<!-- <p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="-why" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p> -->
-									<div class="clear"></div>					
+								<div class="heading-block border-bottom-0 bottommargin-sm">
+									<!-- <div class="badge rounded-pill badge-default">Careers</div> -->
+									<h3 class="nott ls0">Corvanta guides you how much to spend</h3>
 								</div>
+								<p>informed decisions based on data</p>
 							</div>
+
+							<!-- <div class="col-lg-3 col-md-4">
+								<div class="card shadow-sm">
+									<div class="card-body">
+										<h4 class="mb-3">Apply Now</h4>
+										<div class="form-widget">
+											<div class="form-result"></div>
+											<form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-name">Name:*</label>
+													<input type="text" id="template-contactform-name" name="template-contactform-name" class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-email">Email Address:*</label>
+													<input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-4">
+													<label for="template-contactform-website">Website:*</label>
+													<input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group d-none">
+													<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+												</div>
+												<div class="col-12 form-group mb-0">
+													<button class="button button-rounded w-100 nott ls0 m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
+												</div>
+
+												<input type="hidden" name="prefix" value="template-contactform-">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+							<!-- <div class="col-md-4 mt-5 mt-md-0 center">
+								<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe" class="play-icon shadow"><i class="icon-play"></i></a>
+							</div> -->
+
 						</div>
 
 					</div>
 				</div>
 
-				<!-- Works/Projects
+				<!-- Works
 				============================================= -->
-				<!-- <div class="section m-0" style="background: url('seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
+				<div id="work" class="section m-0" style="background: url('seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
 					<div class="container">
 						<div class="heading-block border-bottom-0 center">
-							<div class="badge rounded-pill badge-default">Completed Projects</div>
-							<h3 class="nott ls0">Our Latest Works</h3>
+							
+							<h3 class="nott ls0">How it Work</h3>
 						</div>
 
 						<div id="portfolio" class="portfolio row grid-container gutter-20">
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
+							<article class="portfolio-item col-12 col-sm-6 col-md-6 pf-media pf-icons">
 								<div class="grid-inner">
 									<div class="portfolio-image">
-										<img src="seo/images/works/1.jpg" alt="The Atmosphere">
+										<img src="seo/images/works/1.jpg" alt="IT Spend">
 										<div class="bg-overlay">
 											<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
 												<a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -248,16 +452,16 @@
 										</div>
 									</div>
 									<div class="portfolio-desc">
-										<h3><a href="#">The Atmosphere</a></h3>
-										<span>Digital Marketing</span>
+										<h3><a href="#">IT Spend</a></h3>
+										<span>Insights on the Current IT spend. Understand the current cost, effort and Application type for IT RUN.</span>
 									</div>
 								</div>
 							</article>
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
+							<article class="portfolio-item col-12 col-sm-6 col-md-6 pf-illustrations">
 								<div class="grid-inner">
 									<div class="portfolio-image">
-										<img src="seo/images/works/2.jpg" alt="Wavelength Structure">
+										<img src="seo/images/works/2.jpg" alt="Analysis">
 										<div class="bg-overlay">
 											<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
 												<a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -266,13 +470,13 @@
 										</div>
 									</div>
 									<div class="portfolio-desc">
-										<h3>Wavelength Structure</h3>
-										<span>SEO</span>
+										<h3>Analysis</h3>
+										<span>Analyze the current Spend. Realtime analysis on the current spend to calculate the blended rate</span>
 									</div>
 								</div>
 							</article>
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
+							<!-- <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
 								<div class="grid-inner">
 									<div class="portfolio-image">
 										<img src="seo/images/works/3.jpg" alt="Greenhouse Garden">
@@ -288,12 +492,12 @@
 										<span>Analytics</span>
 									</div>
 								</div>
-							</article>
+							</article> -->
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
+							<article class="portfolio-item col-12 col-sm-6 col-md-6 pf-icons pf-illustrations">
 								<div class="grid-inner">
 									<div class="portfolio-image">
-										<img src="seo/images/works/4.jpg" alt="Industrial Hub">
+										<img src="seo/images/works/5.jpg" alt="Industrial Hub">
 										<div class="bg-overlay">
 											<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
 												<a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -302,13 +506,13 @@
 										</div>
 									</div>
 									<div class="portfolio-desc">
-										<h3>SEO Analysis</h3>
-										<span>SEO</span>
+										<h3>Industry Spend</h3>
+										<span>Compare with Industry standards. Measure the average blended rate with the similar industry spend</span>
 									</div>
 								</div>
 							</article>
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
+							<!-- <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
 								<div class="grid-inner">
 									<div class="portfolio-image">
 										<img src="seo/images/works/5.jpg" alt="Corporate Headquarters">
@@ -324,12 +528,12 @@
 										<span>Digital Marketing</span>
 									</div>
 								</div>
-							</article>
+							</article> -->
 
-							<article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
+							<article class="portfolio-item col-12 col-sm-6 col-md-6 pf-graphics pf-illustrations">
 								<div class="grid-inner">
 									<div class="portfolio-image">
-										<img src="seo/images/works/6.jpg" alt="Space Station">
+										<img src="seo/images/works/4.jpg" alt="Space Station">
 										<div class="bg-overlay">
 											<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
 												<a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -338,24 +542,24 @@
 										</div>
 									</div>
 									<div class="portfolio-desc">
-										<h3>Space Station</h3>
-										<span>Social Media</span>
+										<h3>Optimize</h3>
+										<span>Data Driven Decision. Suggest real time Optimization metrics to improve the Operating Margins.</span>
 									</div>
 								</div>
 							</article>
 
 						</div>
 
-						<div class="center">
+						<!-- <div class="center">
 							<a href="demo-seo-about.html" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Works</a>
-						</div>
+						</div> -->
 
 					</div>
-				</div> -->
+				</div>
 
 				<!-- Features
 				============================================= -->
-				<!-- <div class="container clearfix py-5">
+				<div class="container clearfix py-5">
 					<div class="row">
 						<div class="col-md-4 mt-5">
 							<div class="feature-box fbox-center border-0">
@@ -393,7 +597,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<!-- Testimonials
 				============================================= -->
@@ -553,82 +757,14 @@
 
 				</div> -->
 
-				<!--Contact
+				<!-- Promo/Contact
 				============================================= -->
-				<div class="section lazy mt-5 p-0 min-vh-75" data-bg="https://source.unsplash.com/F75IfIWSqRY/1920x1080" style="background-position: center center; background-repeat: no-repeat; background-size: cover;">
-					<div class="shape-divider" data-shape="illusion" data-height="150"></div>
-					<div class="shape-divider" data-shape="illusion" data-position="bottom" data-height="150"></div>
-					
-				</div>
-				<div class="section mt-5 footer-stick promo-section bg-transparent" style="padding: 100px 0; overflow: visible" id="contact">
+				<div id="contact" class="section mt-5 footer-stick promo-section bg-transparent" style="padding: 100px 0; overflow: visible">
 					<div class="container">
-						<div class="heading-block border-bottom-0 center">
-							
+						<div class="heading-block border-bottom-0 center">			
 							<h2 class="nott ls0">Contact Us</h2>
-							<div class="container clearfix">
-
-								<div class="mx-auto topmargin" style="max-width: 850px;">
-		
-									<div class="form-widget">
-		
-										<div class="form-result"></div>
-		
-										<form class="row mb-0" id="template-contactform" name="template-contactform" action="php/form.php" method="post">
-		
-											<div class="form-process">
-												<div class="css3-spinner">
-													<div class="css3-spinner-scale-ripple">
-														<div></div>
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-		
-											<div class="col-md-6 mb-4">
-												<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
-											</div>
-											<div class="col-md-6 mb-4">
-												<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email Address" />
-											</div>
-		
-											<div class="w-100"></div>
-		
-											<div class="col-md-4 mb-4">
-												<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Phone" />
-											</div>
-		
-											<div class="col-md-8 mb-4">
-												<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control border-form-control" placeholder="Subject" />
-											</div>
-		
-											<div class="w-100"></div>
-		
-											<div class="col-12 mb-4">
-												<textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
-											</div>
-		
-											<div class="col-12 center mb-4">
-												<button class="button button-border button-circle fw-medium ms-0 topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-												<br>
-												<small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our best to get back to you within 6-8 working hours.</small>
-											</div>
-		
-											<div class="w-100"></div>
-		
-											<div class="col-12 d-none">
-												<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-											</div>
-		
-											<input type="hidden" name="prefix" value="template-contactform-">
-		
-										</form>
-		
-									</div>
-		
-								</div>
-		
-							</div>
+							<h5 class="text-uppercase ls1 mb-1">795 Folsom Ave, Suite 600 San Francisco, CA 94107</h5>
+							<a href="#" class="button button-large button-rounded nott ms-0 ls0 mt-4">Contact Us Now</a>
 						</div>
 					</div>
 				</div>
@@ -637,84 +773,214 @@
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="bg-white border-0">
-
-			<div class="container center">
-				<div class="footer-widgets-wrap">
-
-					<div class="row mx-auto clearfix">
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<h4>Site Links</h4>
-
-								<ul class="list-unstyled footer-site-links mb-0">
-									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#why" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Why Corvanta</a></li>
-									<li><a href="#" data-scrollto="#work" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">How we work</a></li>
-									<li><a href="#" data-scrollto="#aboutus" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">AboutUs</a></li>
-									<li><a href="#" data-scrollto="#contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="widget subscribe-widget clearfix" data-loader="button">
-								<img src="images/logo.jpg">
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<h4>Contact</h4>
-
-								<p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
-
-								<div class="center topmargin-sm">
-									<a href="#" class="social-icon inline-block border-0 si-small si-facebook" title="Facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block border-0 si-small si-twitter" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block border-0 si-small si-github" title="Github">
-										<i class="icon-github"></i>
-										<i class="icon-github"></i>
-									</a>
-									<a href="#" class="social-icon inline-block border-0 si-small si-pinterest" title="Pinterest">
-										<i class="icon-pinterest"></i>
-										<i class="icon-pinterest"></i>
-									</a>
+		<footer id="footer" class="border-0 bg-grey">
+			<div class="container">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="container center">
+					<div class="footer-widgets-wrap">
+	
+						<div class="row mx-auto clearfix">
+	
+							<div class="col-lg-4">
+	
+								<div class="widget clearfix">
+									<h4>Site Links</h4>
+	
+									<ul class="list-unstyled footer-site-links mb-0">
+										<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
+										<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About Us</a></li>
+										<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
+										<li><a href="#" data-scrollto="#section-why" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Why</a></li>
+										<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+									</ul>
 								</div>
+	
+							</div>
+	
+							<div class="col-lg-4">
+	
+								<div class="widget subscribe-widget clearfix" data-loader="button">
+									<img src="images/logo1.png">
+								</div>
+	
+							</div>
+	
+							<div class="col-lg-4">
+	
+								<div class="widget clearfix">
+									<h4>Contact</h4>
+	
+									<p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
+	
+									<div class="center topmargin-sm">
+										<a href="#" class="social-icon inline-block border-0 si-small si-facebook" title="Facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#" class="social-icon inline-block border-0 si-small si-twitter" title="Twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#" class="social-icon inline-block border-0 si-small si-github" title="Github">
+											<i class="icon-github"></i>
+											<i class="icon-github"></i>
+										</a>
+										<a href="#" class="social-icon inline-block border-0 si-small si-pinterest" title="Pinterest">
+											<i class="icon-pinterest"></i>
+											<i class="icon-pinterest"></i>
+										</a>
+									</div>
+								</div>
+	
+							</div>
+	
+						</div>
+	
+					</div>
+				</div>
+				<!-- <div class="footer-widgets-wrap pb-5 clearfix">
+
+					<div class="row col-mb-50">
+						<div class="col-md-8">
+
+							<div class="widget clearfix">
+
+								<img src="images/logo1.png" alt="Footer Logo" width="150" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
+
+								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
+
+								<div class="line line-sm"></div>
+
+								<div class="row">
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#wrapper">Home</a></li>
+											<li><a href="#why">Why corvanta</a></li>
+											<li><a href="#work">How it work</a></li>
+											<li><a href="#about">About</a></li>
+											<li><a href="#contact">Contact</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">Shop</a></li>
+											<li><a href="#">Portfolio</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Forums</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">Corporate</a></li>
+											<li><a href="#">Agency</a></li>
+											<li><a href="#">eCommerce</a></li>
+											<li><a href="#">Personal</a></li>
+											<li><a href="#">One Page</a></li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">Restaurant</a></li>
+											<li><a href="#">Wedding</a></li>
+											<li><a href="#">App Showcase</a></li>
+											<li><a href="#">Magazine</a></li>
+											<li><a href="#">Landing Page</a></li>
+										</ul>
+									</div>
+								</div>
+
 							</div>
 
 						</div>
 
+						<div class="col-md-4">
+							<div class="widget clearfix">
+
+								<div class="row clearfix">
+									<div class="col-12">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="icon-envelope text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Call Us:</span><br>
+												<h3 class="nott ls0 fw-semibold">(10) 22 33445566</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12 mt-4">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="icon-phone3 text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Email Us:</span><br>
+												<h3 class="nott ls0 fw-semibold">info@Corvanta.com</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="widget subscribe-widget clearfix">
+								<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+								<div class="widget-subscribe-form-result"></div>
+								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+									<div class="input-group mx-auto">
+										<div class="input-group-text bg-transparent"><i class="icon-email2"></i></div>
+										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+										<button class="btn btn-success button button-color nott ls0 m-0" type="submit">Subscribe</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="widget">
+
+								<div class="row col-mb-30">
+									<div class="col-lg-6 col-md-12 col-6">
+										<a href="https://facebook.com/semicolonweb" target="_blank" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="https://facebook.com/semicolonweb" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+									</div>
+									<div class="col-lg-6 col-md-12 col-6">
+										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+											<i class="icon-rss"></i>
+											<i class="icon-rss"></i>
+										</a>
+										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
 					</div>
 
-				</div>
+				</div>.footer-widgets-wrap end -->
 			</div>
+
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights" style="background: url('seo/images/hero/footer.jpg') no-repeat top center; background-size: cover; padding-top: 70px;">
+			<div id="copyrights" style="background: url('images/footer.png') no-repeat top center; background-size: cover; padding-top: 70px;">
 				<div class="container clearfix">
 
-					<div class="row justify-content-between col-mb-30">
-						<div class="col-12 col-lg-auto text-center text-lg-start">
-							Copyrights &copy; 2022 All Rights Reserved by Corvanta<br>
-							
+					<div class="row justify-content-between col-mb-30 text-light">
+						<div class="col-12 col-lg-auto text-center text-lg-start ">
+							Copyrights &copy; 2020 All Rights Reserved by Corvanta Inc.<br>
+							<!-- <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div> -->
 						</div>
 
 						<div class="col-12 col-lg-auto text-center text-lg-end">
 							<div class="copyrights-menu copyright-links clearfix">
-								<a href="#wrapper">Home</a>/<a href="#why">Why Corvanta</a>/<a href="#work">Work</a>/<a href="#aboutus">AboutUs</a>/<a href="#contact">Contact</a>
+								<a href="#wrapper">Home</a>/<a href="#about">About Us</a>/<a href="#why">why corvanta</a>/<a href="#work">how it work</a>/<a href="#">Contact</a>
 							</div>
 						</div>
 					</div>
@@ -722,6 +988,7 @@
 				</div>
 			</div><!-- #copyrights end -->
 		</footer><!-- #footer end -->
+
 	</div><!-- #wrapper end -->
 
 	<!-- Go To Top
