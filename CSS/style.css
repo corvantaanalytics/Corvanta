@@ -194,6 +194,24 @@ iframe {
 	border: 0 !important;
 	overflow: hidden !important;
 }
+.progress-scroll {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+  
+.progress-container {
+	background-color: rgba(150, 150, 150, 0.6);
+	height: 10px;
+	width: 100%;
+}
+  
+.progress-bar {
+	background-color: #63b3f5;
+	height: 10px;
+	width: 0%;
+}
 
 
 /* ----------------------------------------------------------------
